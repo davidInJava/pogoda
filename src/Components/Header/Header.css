@@ -1,0 +1,15 @@
+.header {
+    background-color: #353246;
+    color: #fff;
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+
+.headerLogo {
+    margin-left: 20px;
+    color: #FFEA29; /* Цвет текста */
+    font-family: 'Italiano'; /* Шрифт */
+    font-size: 40px; /* Размер шрифта */
+    letter-spacing: 21px; /* Расстояние между буквами */
+}

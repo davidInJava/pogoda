@@ -1,0 +1,18 @@
+.card {
+    margin: 10px;
+    background-color: #fff9ee;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    transition: box-shadow 0.3s ease; /* Добавляем переход для плавного эффекта */
+}
+
+.card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Увеличиваем тень при наведении */
+}
+
+.card-container {
+    display: flex;
+    margin-right: 10px;
+}

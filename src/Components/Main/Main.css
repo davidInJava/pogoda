@@ -1,0 +1,109 @@
+.main-content {
+    padding: 20px;
+}
+
+.content-find {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center;
+    gap: 20px; /* Промежуток между элементами */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.content-find select,
+.content-find input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px; /* Ширина элементов */
+}
+
+.content-find label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.content-weather-main {
+    background-color: #ffffff;
+    padding: 10px;
+    display: grid;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #484848;
+    margin-left: 20px;
+    grid-template-columns: repeat(3, 1fr); /* 4 колонки */
+}
+
+.b1 {
+    grid-row: span 2;
+    align-items: center;
+}
+
+.b2 {
+    grid-column: 2; /* Заголовок во второй колонке */
+}
+
+.b3 {
+    grid-column: 3; /* Температура в третьей колонке */
+    margin-left: 10px;
+    color: black;
+}
+
+.b4 {
+    grid-column: 2 / span 2; /* Время во второй и третьей колонках */
+}
+
+.content-find button {
+    background-color: #fadd47; /* Синий цвет */
+    color: #3a3a3a;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+.content-find button:hover {
+    background-color: #0056b3; /* Более темный оттенок синего */
+}
+
+/* Выравнивание элементов */
+.content-find > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ширина блока по содержимому */
+.content-find {
+    width: fit-content; /* Ширина подстраивается под содержимое */
+}
+
+.content-weather {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto; /* Вертикальный скролл при переполнении */
+    border: 1px solid #ccc; /* Граница для визуализации */
+
+}
+
+.content-array {
+    overflow: auto;
+}
+
+.selected-index {
+    justify-content: center;
+    margin-left: 10px;
+}

@@ -1,0 +1,70 @@
+.selected-array {
+    display: flex;
+    flex-direction: row; /* Arrange items horizontally */
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-height: 500px; /* Limit height */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    overflow-y: hidden; /* Prevent vertical scrolling */
+    margin: 20px auto; /* Center align the block */
+    white-space: nowrap; /* Prevent line breaks inside the container */
+}
+
+.selected-item {
+    display: flex; /* Flexbox for vertical layout */
+    flex-direction: column; /* Stack inner elements vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: #f9f9f9; /* Light background for each item */
+    padding: 15px; /* Padding around each item */
+    margin: 10px; /* Space between items */
+    border-radius: 8px; /* Rounded corners for items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for items */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+    min-width: 250px; /* Minimum width for each item */
+    max-width: 200px; /* Limit width to prevent overflow */
+    overflow: hidden; /* Prevent overflow of content */
+}
+
+.selected-item:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.time-label {
+    font-size: 1.2em; /* Larger font for time */
+    font-weight: bold; /* Bold text */
+    color: #333; /* Darker text color */
+}
+
+.weather-info {
+    display: flex; /* Flexbox for horizontal layout */
+    align-items: center; /* Center items vertically */
+    margin-top: 10px; /* Space above weather info */
+}
+
+.condition-text {
+    font-size: 20px; /* Standard font size */
+    color: #555; /* Medium gray color for text */
+    margin-right: 10px; /* Space between text and icon */
+    flex: 1; /* Allow text to grow */
+}
+
+.weather-icon {
+    width: 40px; /* Fixed width for icons */
+    height: 40px; /* Fixed height for icons */
+    margin-right: 10px; /* Space between icon and temperature */
+}
+
+.temperature {
+    font-size: 1.5em; /* Larger font size for temperature */
+    font-weight: bold; /* Bold temperature */
+    white-space: nowrap; /* Prevent temperature text from wrapping */
+}
+
+.additional-info {
+    margin-top: 10px; /* Space above additional info */
+    font-size: 0.9em; /* Smaller font size for additional info */
+    color: #666; /* Gray color for additional info */
+}
